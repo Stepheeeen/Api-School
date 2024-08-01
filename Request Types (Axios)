@@ -1,0 +1,52 @@
+Types of requests in Axios
+
+In Axios, which is a popular HTTP client for making requests in JavaScript, you can use various HTTP methods to interact with APIs. Here are the common types of requests you can make with Axios:
+
+1. **GET** - Retrieve data from a server.
+   ```javascript
+   axios.get('/path')
+     .then(response => console.log(response.data))
+     .catch(error => console.error(error));
+   ```
+
+2. **POST** - Send data to a server to create or update a resource.
+   ```javascript
+   axios.post('/path', { key: 'value' })
+     .then(response => console.log(response.data))
+     .catch(error => console.error(error));
+   ```
+
+3. **PUT** - Update an existing resource on the server.
+   ```javascript
+   axios.put('/path', { key: 'newValue' })
+     .then(response => console.log(response.data))
+     .catch(error => console.error(error));
+   ```
+
+4. **PATCH** - Partially update a resource on the server.
+   ```javascript
+   axios.patch('/path', { key: 'updatedValue' })
+     .then(response => console.log(response.data))
+     .catch(error => console.error(error));
+   ```
+
+5. **DELETE** - Delete a resource from the server.
+   ```javascript
+   axios.delete('/path')
+     .then(response => console.log(response.data))
+     .catch(error => console.error(error));
+   ```
+
+6. **HEAD** - Retrieve headers from a server (no response body).
+   ```javascript
+   axios.head('/path')
+     .then(response => console.log(response.headers))
+     .catch(error => console.error(error));
+   ```
+
+7. **OPTIONS** - Retrieve supported HTTP methods from a server (pre-flight request for CORS).
+   ```javascript
+   axios.options('/path')
+     .then(response => console.log(response.headers))
+     .catch(error => console.error(error));
+   ```
