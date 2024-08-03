@@ -1,0 +1,9 @@
+Error Codes and their meanings
+
+400 = incorrect request parsing error
+401 = unauthorized error
+403 = restricted access to the resource
+404 = the resource does not exist 
+500 and above = backend error
+200 = success
+201 = successful during creating of a user(or smth)
